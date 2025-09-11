@@ -1,9 +1,10 @@
-import CardStack from '@/components/template/HomeView/Cards/CardStack'
+import UploaderCard from '@/components/template/HomeView/Cards/UploaderCard'
 
 const Home = () => {
     return (
         <div>
-            <CardStack />
+            <h2>Componente Original</h2>
+            <UploaderCard />
         </div>
     )
 }

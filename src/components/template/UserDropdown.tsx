@@ -56,7 +56,7 @@ const _UserDropdown = ({ className }: CommonProps) => {
                             <div className="font-bold text-gray-900 dark:text-gray-100">
                                 {user?.name}
                             </div>
-                            <div className="text-xs">{user?.profile.role}</div>
+                            <div className="text-xs">{user?.role}</div>
                         </div>
                     </div>
                 </Dropdown.Item>

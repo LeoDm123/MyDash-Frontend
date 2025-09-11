@@ -1,15 +1,12 @@
-const FormatCurrency: (locale: string) => (value: number) => string = (
-    locale: string,
+export const FormatCurrency = (
+    locale: string = 'es-AR',
+    currency: string = 'ARS',
+    minimumFractionDigits = 2,
 ) => {
-    const formatCurrency = (value: number) => {
-        return new Intl.NumberFormat(locale, {
+    return (value: number) =>
+        new Intl.NumberFormat(locale, {
             style: 'currency',
-            currency: 'ARS',
-            minimumFractionDigits: 2,
+            currency,
+            minimumFractionDigits,
         }).format(value)
-    }
-
-    return formatCurrency
 }
-
-export default FormatCurrency

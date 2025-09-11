@@ -1,144 +1,12 @@
-const API_BASE_URL: string = process.env.API_BASE_URL as string
+const API_BASE_URL: string = import.meta.env.VITE_API_BASE_URL as string
+const AUTH_TOKEN: string | undefined = import.meta.env.VITE_AUTH_TOKEN as string
 
-export const fetchCustomersData = async (queryParams: string): Promise<any> => {
-    const response = await fetch(
-        'https://www.primefaces.org/data/customers?' + queryParams,
-    )
-    return response.json()
-}
-
-export const fetchPayments = async (
-    userId: string,
-    page: number,
-): Promise<any> => {
-    const PAYMENTS_ENDPOINT: string = `/payments/paginate/50?page=${page}`
-
-    try {
-        const response = await fetch(`${API_BASE_URL}${PAYMENTS_ENDPOINT}`, {
-            method: 'GET',
-            headers: {
-                'X-User-ID': userId,
-            },
-        })
-
-        if (!response.ok) {
-            throw new Error(`Error al obtener los pagos: ${response.status}`)
-        }
-
-        const data = await response.json()
-        return data
-    } catch (error) {
-        console.error('Error al obtener los pagos:', error)
-        throw error
-    }
-}
-
-export const fetchPaymentsGrap = async (userId: string): Promise<any> => {
-    const PAYMENTS_ENDPOINT: string = `/paymentsGrap`
-
-    try {
-        const response = await fetch(`${API_BASE_URL}${PAYMENTS_ENDPOINT}`, {
-            method: 'GET',
-            headers: {
-                'X-User-ID': userId,
-            },
-        })
-
-        if (!response.ok) {
-            throw new Error(`Error al obtener los pagos: ${response.status}`)
-        }
-
-        const data = await response.json()
-        return data
-    } catch (error) {
-        console.error('Error al obtener los pagos:', error)
-        throw error
-    }
-}
-
-export const fetchUpdatePassword = async (
-    userId: string,
-    oldPassword: string,
-    newPassword: string,
-): Promise<boolean> => {
-    const UPDATE_PASS_ENDPOINT: string = '/update-pass'
-
-    try {
-        const response = await fetch(
-            `${API_BASE_URL}${UPDATE_PASS_ENDPOINT}/${userId}`,
-            {
-                method: 'PUT',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    contrasena_actual: oldPassword,
-                    nueva_contrasena: newPassword,
-                }),
-            },
-        )
-
-        if (!response.ok) {
-            throw new Error(
-                `Error al actualizar la contraseña: ${response.status}`,
-            )
-        }
-
-        console.log('Contraseña actualizada correctamente')
-        return true
-    } catch (error: any) {
-        console.error('Error de red:', error.message)
-        throw error
-    }
-}
-
-export const fetchSalesStats = async (userId: string): Promise<any> => {
-    const SALES_STATS_ENDPOINT: string = '/sales-stats'
-
-    try {
-        const response = await fetch(`${API_BASE_URL}${SALES_STATS_ENDPOINT}`, {
-            method: 'GET',
-            headers: {
-                'X-User-ID': userId,
-            },
-        })
-
-        if (!response.ok) {
-            throw new Error(
-                `Error al obtener estadisticas de ventas: ${response.status}`,
-            )
-        }
-
-        const data = await response.json()
-        return {
-            salesToday: {
-                cantidad: data.salesToday.cantidad,
-                monto: data.salesToday.monto,
-            },
-            salesLast7Days: {
-                cantidad: data.salesLast7Days.cantidad,
-                monto: data.salesLast7Days.monto,
-            },
-            salesLastDay: {
-                cantidad: data.salesLastDay.cantidad,
-                monto: data.salesLastDay.monto,
-            },
-            salesLastMonth: {
-                cantidad: data.salesLastMonth.cantidad,
-                monto: data.salesLastMonth.monto,
-            },
-        }
-    } catch (error) {
-        console.error('Error al obtener estadisticas de ventas:', error)
-        throw error
-    }
-}
-
+//AUTH SERVICES
 export const fetchLoginUser = async (
     email: string,
     password: string,
 ): Promise<any> => {
-    const LOGIN_ENDPOINT: string = '/auth/login'
+    const LOGIN_ENDPOINT: string = '/auth/userLogin'
 
     try {
         const response = await fetch(`${API_BASE_URL}${LOGIN_ENDPOINT}`, {
@@ -157,6 +25,238 @@ export const fetchLoginUser = async (
         return data
     } catch (error) {
         console.error('Error al iniciar sesion:', error)
+        throw error
+    }
+}
+
+//DATASET
+export const createDataset = async (datasetData: {
+    datasetName: string
+    originalFileName?: string
+    importedBy?: string
+    currency?: string
+    datasetType: string
+    movements: Array<{
+        fecha: string | Date
+        categoria: any
+        tipo: 'ingreso' | 'egreso'
+        monto: number
+        saldo?: number
+        nota?: string
+        source?: string
+        externalId?: string
+    }>
+}): Promise<any> => {
+    const CREATE_DATASET_ENDPOINT: string = '/dataSet/createDataset'
+
+    try {
+        const response = await fetch(
+            `${API_BASE_URL}${CREATE_DATASET_ENDPOINT}`,
+            {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    ...(AUTH_TOKEN
+                        ? { Authorization: `Bearer ${AUTH_TOKEN}` }
+                        : {}),
+                },
+                body: JSON.stringify(datasetData),
+            },
+        )
+
+        if (!response.ok) {
+            if (response.status === 400) {
+                const errorData = await response.json()
+                throw new Error(`Datos inválidos: ${errorData.msg}`)
+            } else if (response.status === 409) {
+                const errorData = await response.json()
+                throw new Error(`Dataset duplicado: ${errorData.msg}`)
+            } else {
+                throw new Error(`Error al crear dataset: ${response.status}`)
+            }
+        }
+
+        const data = await response.json()
+        return data
+    } catch (error) {
+        console.error('Error en createDataset:', error)
+        throw error
+    }
+}
+
+export const addMovementsToDataset = async (
+    datasetId: string,
+    movements: Array<{
+        fecha: string | Date
+        categoria: any
+        tipo: 'ingreso' | 'egreso'
+        monto: number
+        saldo?: number
+        nota?: string
+    }>,
+): Promise<any> => {
+    const ADD_MOVEMENTS_ENDPOINT: string = `/dataSet/addMovements/${datasetId}`
+
+    try {
+        const response = await fetch(
+            `${API_BASE_URL}${ADD_MOVEMENTS_ENDPOINT}`,
+            {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json',
+                    ...(AUTH_TOKEN
+                        ? { Authorization: `Bearer ${AUTH_TOKEN}` }
+                        : {}),
+                },
+                body: JSON.stringify({
+                    movements: movements.map((m) => ({
+                        ...m,
+                        fecha:
+                            m.fecha instanceof Date
+                                ? m.fecha.toISOString()
+                                : m.fecha,
+                    })),
+                }),
+            },
+        )
+
+        if (!response.ok) {
+            // Manejar errores específicos basados en el status code
+            if (response.status === 400) {
+                const errorData = await response.json()
+                throw new Error(`Datos inválidos: ${errorData.msg}`)
+            } else if (response.status === 404) {
+                throw new Error('Dataset no encontrado')
+            } else {
+                throw new Error(
+                    `Error al agregar movimientos: ${response.status}`,
+                )
+            }
+        }
+
+        const data = await response.json()
+        return data
+    } catch (error) {
+        console.error('Error en addMovementsToDataset:', error)
+        throw error
+    }
+}
+
+export const fetchDatasets = async (): Promise<any> => {
+    const DATASETS_ENDPOINT: string = '/dataSet/getDatasets'
+
+    try {
+        const response = await fetch(`${API_BASE_URL}${DATASETS_ENDPOINT}`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+                ...(AUTH_TOKEN
+                    ? { Authorization: `Bearer ${AUTH_TOKEN}` }
+                    : {}),
+            },
+        })
+
+        if (!response.ok) {
+            throw new Error(`Error al obtener datasets: ${response.status}`)
+        }
+
+        const data = await response.json()
+        return data
+    } catch (error) {
+        console.error('Error en fetchDatasets:', error)
+        throw error
+    }
+}
+
+export const fetchDataSetByEmail = async (email: string): Promise<any> => {
+    const FETCH_DATASETS_BY_EMAIL_ENDPOINT: string = `/dataSet/getDatasetsByEmail/${email}`
+
+    try {
+        const response = await fetch(
+            `${API_BASE_URL}${FETCH_DATASETS_BY_EMAIL_ENDPOINT}`,
+            {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json',
+                    ...(AUTH_TOKEN
+                        ? { Authorization: `Bearer ${AUTH_TOKEN}` }
+                        : {}),
+                },
+            },
+        )
+
+        if (!response.ok) {
+            throw new Error(
+                `Error al obtener datasets por email: ${response.status}`,
+            )
+        }
+
+        const data = await response.json()
+        return data
+    } catch (error) {
+        console.error('Error en fetchDataSetByEmail:', error)
+        throw error
+    }
+}
+
+export const getDatasetById = async (datasetId: string): Promise<any> => {
+    const GET_DATASET_ENDPOINT: string = `/dataSet/getDatasetById/${datasetId}`
+
+    try {
+        const response = await fetch(`${API_BASE_URL}${GET_DATASET_ENDPOINT}`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+                ...(AUTH_TOKEN
+                    ? { Authorization: `Bearer ${AUTH_TOKEN}` }
+                    : {}),
+            },
+        })
+
+        if (!response.ok) {
+            // Manejar errores específicos basados en el status code
+            if (response.status === 404) {
+                throw new Error('Dataset no encontrado')
+            } else {
+                throw new Error(`Error al obtener dataset: ${response.status}`)
+            }
+        }
+
+        const data = await response.json()
+        return data
+    } catch (error) {
+        console.error('Error en getDatasetById:', error)
+        throw error
+    }
+}
+
+export const getDatasetByEmail = async (email: string): Promise<any> => {
+    const GET_DATASET_ENDPOINT: string = `/dataSet//getDatasetsByEmail/${email}`
+
+    try {
+        const response = await fetch(`${API_BASE_URL}${GET_DATASET_ENDPOINT}`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+                ...(AUTH_TOKEN
+                    ? { Authorization: `Bearer ${AUTH_TOKEN}` }
+                    : {}),
+            },
+        })
+
+        if (!response.ok) {
+            // Manejar errores específicos basados en el status code
+            if (response.status === 404) {
+                throw new Error('Dataset no encontrado')
+            } else {
+                throw new Error(`Error al obtener dataset: ${response.status}`)
+            }
+        }
+
+        const data = await response.json()
+        return data
+    } catch (error) {
+        console.error('Error en getDatasetByEmail:', error)
         throw error
     }
 }

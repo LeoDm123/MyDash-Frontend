@@ -1,27 +1,27 @@
 import {
-    HiOutlineColorSwatch,
-    HiOutlineDesktopComputer,
-    HiOutlineTemplate,
-    HiOutlineViewGridAdd,
-    HiSwitchHorizontal,
+    HiOutlineSwatch,
+    HiOutlineComputerDesktop,
+    HiOutlineQueueList,
+    HiOutlineSquaresPlus,
     HiOutlineHome,
-    HiAdjustments,
-    HiOutlineFilter,
-    HiOutlineSearch,
-} from 'react-icons/hi'
+    HiOutlineAdjustmentsVertical,
+    HiOutlineFunnel,
+    HiOutlinePresentationChartBar,
+    HiOutlineMagnifyingGlass,
+} from 'react-icons/hi2'
 
 export type NavigationIcons = Record<string, JSX.Element>
 
 const navigationIcon: NavigationIcons = {
     home: <HiOutlineHome />,
-    singleMenu: <HiOutlineViewGridAdd />,
-    transactions: <HiSwitchHorizontal />,
-    collapseMenu: <HiOutlineTemplate />,
-    groupSingleMenu: <HiOutlineDesktopComputer />,
-    groupCollapseMenu: <HiOutlineColorSwatch />,
-    settings: <HiAdjustments />,
-    filter: <HiOutlineFilter />,
-    search: <HiOutlineSearch />,
+    singleMenu: <HiOutlineSquaresPlus />,
+    cashflowDashboard: <HiOutlinePresentationChartBar />,
+    collapseMenu: <HiOutlineQueueList />,
+    groupSingleMenu: <HiOutlineComputerDesktop />,
+    groupCollapseMenu: <HiOutlineSwatch />,
+    settings: <HiOutlineAdjustmentsVertical />,
+    filter: <HiOutlineFunnel />,
+    search: <HiOutlineMagnifyingGlass />,
 }
 
 export default navigationIcon
