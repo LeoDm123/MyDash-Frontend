@@ -10,7 +10,7 @@ import useMenuActive from '@/utils/hooks/useMenuActive'
 import { useTranslation } from 'react-i18next'
 import { Direction, NavMode } from '@/@types/theme'
 import type { NavigationTree } from '@/@types/navigation'
-import Transactions from './Transactions'
+import VerticalSingleMenuItem from './VerticalSingleMenuItem'
 
 export interface VerticalMenuContentProps {
     navMode: NavMode
@@ -55,7 +55,7 @@ const VerticalMenuContent = (props: VerticalMenuContentProps) => {
     const getNavItem = (nav: NavigationTree) => {
         if (nav.subMenu.length === 0 && nav.type === NAV_ITEM_TYPE_ITEM) {
             return (
-                <Transactions
+                <VerticalSingleMenuItem
                     key={nav.key}
                     nav={nav}
                     sideCollapsed={collapsed}

@@ -23,26 +23,24 @@ const Side = ({ children, content, ...rest }: SideProps) => {
                         <Avatar
                             className="border-2 border-white"
                             shape="circle"
-                            src="/img/avatars/alex-torriglia.jpg"
+                            src="/img/avatars/ceo-1.jpg"
                         />
                         <div className="text-dark">
                             <div className="font-semibold text-base">
-                                Alex Torriglia
+                                Company CEO
                             </div>
                             <span className="opacity-100">
                                 Co-Founder & CEO
                             </span>
                         </div>
                     </div>
-                    <p className="text-lg text-dark opacity-100">
-                        Xcoop es un joint venture internacional conformado por
-                        compañías de servicios fintech, instituciones
-                        financieras, proveedores de tecnología, unidos con el
-                        fin de crear e impulsar servicios financieros
-                        innovadores y disruptivos, a través de la creación del
-                        primer ecosistema de pagos basado en el envío de remesas
-                        de dinero desde, hacia y entre los países de América
-                        latina.
+                    <p
+                        className="text-lg text-dark opacity-100"
+                        style={{ marginBottom: '80px' }}
+                    >
+                        Somos un joint venture internacional cuyo fin es crear e
+                        impulsar servicios financieros innovadores y
+                        disruptivos.
                     </p>
                 </div>
                 <span className="text-dark">

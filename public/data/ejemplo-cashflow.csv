@@ -1,0 +1,11 @@
+fecha,categoria,subcategoria,egreso,ingreso,saldo,notas
+2024-02-01,Ingresos,Saldo de Ejercicios Anteriores,0,312320,312320,Justificar
+2024-02-02,Ingresos,Venta de Divisas,0,1050000,1046000,Venta de Dolares - T.C.: $1.180
+2024-02-02,Hogar,Comida,4000,0,1046000,Almuerzo
+2024-02-02,Sueldos,Carmen,40000,0,1006000,
+2024-02-02,Sueldos,Empleados,729500,0,276500,
+2024-02-03,Hogar,Comida,2500,0,274000,Desayuno
+2024-02-03,Ingresos,Venta de Divisas,0,500000,774000,Venta de Dolares - T.C.: $1.185
+2024-02-04,Transporte,Combustible,15000,0,759000,Combustible auto
+2024-02-04,Hogar,Comida,8000,0,751000,Supermercado
+2024-02-05,Sueldos,Empleados,729500,0,21500,Sueldo febrero

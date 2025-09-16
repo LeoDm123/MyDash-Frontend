@@ -8,7 +8,7 @@ export interface AvatarProps extends CommonProps {
     alt?: string
     icon?: ReactNode
     onClick?: () => void
-    size?: 'lg' | 'md' | 'sm' | number
+    size?: 'xxl' | 'xl' | 'lg' | 'md' | 'sm' | number
     shape?: Exclude<TypeAttributes.Shape, 'none'> | 'square'
     src?: string
     srcSet?: string

@@ -14,11 +14,11 @@ export type Config = {
 }
 
 export const defaultConfig = {
-    themeColor: 'indigo',
+    themeColor: 'blue',
     direction: 'ltr',
     mode: 'light',
     locale: 'en',
-    primaryColorLevel: 600,
+    primaryColorLevel: 900,
     cardBordered: false,
     controlSize: SIZES.MD,
     navMode: 'light',

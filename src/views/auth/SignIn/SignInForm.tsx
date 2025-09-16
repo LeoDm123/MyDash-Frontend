@@ -44,7 +44,7 @@ const SignInForm = (props: SignInFormProps) => {
 
     const [message, setMessage] = useTimeOutMessage()
 
-    const { login } = useAuth()
+    const { signIn } = useAuth()
 
     const onSignIn = async (
         values: SignInFormSchema,
@@ -53,10 +53,10 @@ const SignInForm = (props: SignInFormProps) => {
         const { email, password } = values
         setSubmitting(true)
 
-        const result = await login(email, password)
+        const result = await signIn({ email, password })
 
-        if (result === 'err') {
-            setMessage('Credenciales incorrectas')
+        if (result?.status === 'failed') {
+            setMessage(result.message)
         }
 
         setSubmitting(false)
@@ -71,8 +71,8 @@ const SignInForm = (props: SignInFormProps) => {
             )}
             <Formik
                 initialValues={{
-                    email: 'admin',
-                    password: '123Qwe',
+                    email: '',
+                    password: '',
                     rememberMe: true,
                 }}
                 validationSchema={validationSchema}

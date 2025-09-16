@@ -1,0 +1,18 @@
+export const CASHFLOW_COLUMN_NAMES = [
+    'Beneficiario',
+    'Categoría',
+    'Cuenta',
+    'Descripción',
+    'Divisa',
+    'Egreso',
+    'Estado',
+    'Fecha',
+    'Identificador',
+    'Importe',
+    'Ingreso',
+    'Notas',
+    'Número',
+    'Saldo',
+    'Subcategoría',
+    'Tipo',
+]

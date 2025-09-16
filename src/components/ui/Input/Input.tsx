@@ -66,7 +66,7 @@ const Input = forwardRef<ElementType | HTMLInputElement, InputProps>(
             size || inputGroupSize || formControlSize || controlSize
 
         const fixControlledValue = (
-            val: string | number | readonly string[] | undefined
+            val: string | number | readonly string[] | undefined,
         ) => {
             if (typeof val === 'undefined' || val === null) {
                 return ''
@@ -106,7 +106,7 @@ const Input = forwardRef<ElementType | HTMLInputElement, InputProps>(
             !prefix && !suffix ? className : '',
             disabled && 'input-disabled',
             isInvalid && 'input-invalid',
-            textArea && 'input-textarea'
+            textArea && 'input-textarea',
         )
 
         const prefixNode = useRef<HTMLDivElement>(null)
@@ -219,7 +219,7 @@ const Input = forwardRef<ElementType | HTMLInputElement, InputProps>(
         }
 
         return renderChildren()
-    }
+    },
 )
 
 Input.displayName = 'Input'

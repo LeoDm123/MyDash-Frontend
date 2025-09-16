@@ -9,7 +9,7 @@ const ModeSwitcher = () => {
         (checked: boolean) => {
             setIsDark(checked ? 'dark' : 'light')
         },
-        [setIsDark]
+        [setIsDark],
     )
 
     return (

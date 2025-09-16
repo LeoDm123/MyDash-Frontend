@@ -1,0 +1,1625 @@
+{
+    "datasetName": "Caja2024Q1",
+    "originalFileName": "Caja2024.csv",
+    "importedBy": "leo@example.com",
+    "currency": "ARS",
+    "movements": [
+        {
+            "fecha": "2024-02-01",
+            "categoria": {
+                "grupo": "Ingresos",
+                "subgrupo": "Saldo de Ejercicios Anteriores"
+            },
+            "tipo": "ingreso",
+            "monto": 312320,
+            "saldo": 312320,
+            "nota": "Justificar"
+        },
+        {
+            "fecha": "2024-02-02",
+            "categoria": {
+                "grupo": "Ingresos",
+                "subgrupo": "Venta de Divisas"
+            },
+            "tipo": "ingreso",
+            "monto": 1050000,
+            "saldo": 1046000,
+            "nota": "Venta de Dolares - T.C.: $1.180"
+        },
+        {
+            "fecha": "2024-02-02",
+            "categoria": {
+                "grupo": "Hogar",
+                "subgrupo": "Comida"
+            },
+            "tipo": "egreso",
+            "monto": 4000,
+            "saldo": 1046000,
+            "nota": "Almuerzo"
+        },
+        {
+            "fecha": "2024-02-02",
+            "categoria": {
+                "grupo": "Sueldos",
+                "subgrupo": "Carmen"
+            },
+            "tipo": "egreso",
+            "monto": 40000,
+            "saldo": 1006000,
+            "nota": null
+        },
+        {
+            "fecha": "2024-02-02",
+            "categoria": {
+                "grupo": "Sueldos",
+                "subgrupo": "Empleados"
+            },
+            "tipo": "egreso",
+            "monto": 729500,
+            "saldo": 276500,
+            "nota": null
+        },
+        {
+            "fecha": "2024-02-02",
+            "categoria": {
+                "grupo": "Sueldos",
+                "subgrupo": "Papá/Mamá"
+            },
+            "tipo": "egreso",
+            "monto": 100000,
+            "saldo": 176500,
+            "nota": null
+        },
+        {
+            "fecha": "2024-02-02",
+            "categoria": {
+                "grupo": "Sueldos",
+                "subgrupo": "Leandro"
+            },
+            "tipo": "egreso",
+            "monto": 176000,
+            "saldo": 500,
+            "nota": null
+        },
+        {
+            "fecha": "2024-02-05",
+            "categoria": {
+                "grupo": "Plata Prestada",
+                "subgrupo": "Leandro"
+            },
+            "tipo": "ingreso",
+            "monto": 91000,
+            "saldo": 91000,
+            "nota": "Dados por Leo"
+        },
+        {
+            "fecha": "2024-02-05",
+            "categoria": {
+                "grupo": "Hogar",
+                "subgrupo": "Comida"
+            },
+            "tipo": "egreso",
+            "monto": 6000,
+            "saldo": 85000,
+            "nota": "Almuerzo"
+        },
+        {
+            "fecha": "2024-02-05",
+            "categoria": {
+                "grupo": "Sueldos",
+                "subgrupo": "Empleados"
+            },
+            "tipo": "egreso",
+            "monto": 10000,
+            "saldo": 75000,
+            "nota": "Vale Coronel"
+        },
+        {
+            "fecha": "2024-02-06",
+            "categoria": {
+                "grupo": "Hogar",
+                "subgrupo": "Comida"
+            },
+            "tipo": "egreso",
+            "monto": 1600,
+            "saldo": 73400,
+            "nota": "Panadería"
+        },
+        {
+            "fecha": "2024-02-06",
+            "categoria": {
+                "grupo": "Gastos Empresa",
+                "subgrupo": "Viaticos Obras"
+            },
+            "tipo": "egreso",
+            "monto": 2000,
+            "saldo": 71400,
+            "nota": "Sanatorio Rivadavia"
+        },
+        {
+            "fecha": "2024-02-06",
+            "categoria": {
+                "grupo": "Gastos Empresa",
+                "subgrupo": "Insumos"
+            },
+            "tipo": "egreso",
+            "monto": 1000,
+            "saldo": 70400,
+            "nota": "Guantes de Latex"
+        },
+        {
+            "fecha": "2024-02-06",
+            "categoria": {
+                "grupo": "Hogar",
+                "subgrupo": "Comida"
+            },
+            "tipo": "egreso",
+            "monto": 6000,
+            "saldo": 64400,
+            "nota": "Almuerzo"
+        },
+        {
+            "fecha": "2024-02-06",
+            "categoria": {
+                "grupo": "Sueldos",
+                "subgrupo": "Empleados"
+            },
+            "tipo": "egreso",
+            "monto": 10000,
+            "saldo": 54400,
+            "nota": "Vale Fabian"
+        },
+        {
+            "fecha": "2024-02-06",
+            "categoria": {
+                "grupo": "Sueldos",
+                "subgrupo": "Empleados"
+            },
+            "tipo": "egreso",
+            "monto": 30000,
+            "saldo": 24400,
+            "nota": "Vale Perea"
+        },
+        {
+            "fecha": "2024-02-07",
+            "categoria": {
+                "grupo": "Gastos Empresa",
+                "subgrupo": "Insumos"
+            },
+            "tipo": "egreso",
+            "monto": 1700,
+            "saldo": 22700,
+            "nota": "Tornillos para chapa"
+        },
+        {
+            "fecha": "2024-02-07",
+            "categoria": {
+                "grupo": "Hogar",
+                "subgrupo": "Empleada"
+            },
+            "tipo": "egreso",
+            "monto": 4500,
+            "saldo": 18200,
+            "nota": null
+        },
+        {
+            "fecha": "2024-02-08",
+            "categoria": {
+                "grupo": "Automóvil",
+                "subgrupo": "Combustible"
+            },
+            "tipo": "egreso",
+            "monto": 10000,
+            "saldo": 8200,
+            "nota": "S10 - Factura A N° 280923"
+        },
+        {
+            "fecha": "2024-02-08",
+            "categoria": {
+                "grupo": "Gastos Empresa",
+                "subgrupo": "Viaticos Obras"
+            },
+            "tipo": "egreso",
+            "monto": 8000,
+            "saldo": 200,
+            "nota": "Petraglia"
+        },
+        {
+            "fecha": "2024-02-08",
+            "categoria": {
+                "grupo": "Ingresos",
+                "subgrupo": "Venta de Divisas"
+            },
+            "tipo": "ingreso",
+            "monto": 200200,
+            "saldo": 200200,
+            "nota": "Venta de Dolares - T.C.: $1.135"
+        },
+        {
+            "fecha": "2024-02-08",
+            "categoria": {
+                "grupo": "Hogar",
+                "subgrupo": "Comida"
+            },
+            "tipo": "egreso",
+            "monto": 6000,
+            "saldo": 194200,
+            "nota": "Almuerzo"
+        },
+        {
+            "fecha": "2024-02-08",
+            "categoria": {
+                "grupo": "Proveedores",
+                "subgrupo": "Hipermaderas"
+            },
+            "tipo": "egreso",
+            "monto": 159500,
+            "saldo": 34700,
+            "nota": "Compra Cemento de Contacto - Factura A N°"
+        },
+        {
+            "fecha": "2024-02-08",
+            "categoria": {
+                "grupo": "Sueldos",
+                "subgrupo": "Empleados"
+            },
+            "tipo": "egreso",
+            "monto": 10000,
+            "saldo": 24700,
+            "nota": "Vale Alarcon"
+        },
+        {
+            "fecha": "2024-02-09",
+            "categoria": {
+                "grupo": "Gastos Empresa",
+                "subgrupo": "Viaticos Obras"
+            },
+            "tipo": "egreso",
+            "monto": 9000,
+            "saldo": 15700,
+            "nota": "Petraglia"
+        },
+        {
+            "fecha": "2024-02-09",
+            "categoria": {
+                "grupo": "Hogar",
+                "subgrupo": "Comida"
+            },
+            "tipo": "egreso",
+            "monto": 4900,
+            "saldo": 10800,
+            "nota": "Panaderia + Almuerzo"
+        },
+        {
+            "fecha": "2024-02-09",
+            "categoria": {
+                "grupo": "Proveedores",
+                "subgrupo": "Hipermaderas"
+            },
+            "tipo": "egreso",
+            "monto": 14400,
+            "saldo": -3600,
+            "nota": "Discos de Corte - Factura A N°"
+        },
+        {
+            "fecha": "2024-02-09",
+            "categoria": {
+                "grupo": "Ingresos",
+                "subgrupo": "Venta de Divisas"
+            },
+            "tipo": "ingreso",
+            "monto": 2496400,
+            "saldo": 2496400,
+            "nota": "Venta de Dolares - T.C.: $1.135"
+        },
+        {
+            "fecha": "2024-02-09",
+            "categoria": {
+                "grupo": "Sueldos",
+                "subgrupo": "Carmen"
+            },
+            "tipo": "egreso",
+            "monto": 60000,
+            "saldo": 2436400,
+            "nota": null
+        },
+        {
+            "fecha": "2024-02-09",
+            "categoria": {
+                "grupo": "Sueldos",
+                "subgrupo": "Empleados"
+            },
+            "tipo": "egreso",
+            "monto": 2081000,
+            "saldo": 355400,
+            "nota": "Semanal + Diferencia por vacaciones"
+        },
+        {
+            "fecha": "2024-02-09",
+            "categoria": {
+                "grupo": "Sueldos",
+                "subgrupo": "Leandro"
+            },
+            "tipo": "egreso",
+            "monto": 200000,
+            "saldo": 155400,
+            "nota": null
+        },
+        {
+            "fecha": "2024-02-09",
+            "categoria": {
+                "grupo": "Plata Prestada",
+                "subgrupo": "Leandro"
+            },
+            "tipo": "egreso",
+            "monto": 90500,
+            "saldo": 64900,
+            "nota": "Devueltos a Leo"
+        },
+        {
+            "fecha": "2024-02-14",
+            "categoria": {
+                "grupo": "Gastos Empresa",
+                "subgrupo": "Viaticos Obras"
+            },
+            "tipo": "egreso",
+            "monto": 9000,
+            "saldo": 55900,
+            "nota": "Petraglia"
+        },
+        {
+            "fecha": "2024-02-14",
+            "categoria": {
+                "grupo": "Hogar",
+                "subgrupo": "Comida"
+            },
+            "tipo": "egreso",
+            "monto": 3000,
+            "saldo": 52900,
+            "nota": "Panaderia"
+        },
+        {
+            "fecha": "2024-02-14",
+            "categoria": {
+                "grupo": "Gastos Empresa",
+                "subgrupo": "Insumos"
+            },
+            "tipo": "egreso",
+            "monto": 1000,
+            "saldo": 51900,
+            "nota": "Barilla extra pasador Casa Vera"
+        },
+        {
+            "fecha": "2024-02-14",
+            "categoria": {
+                "grupo": "Automóvil",
+                "subgrupo": "Estacionamiento"
+            },
+            "tipo": "egreso",
+            "monto": 200,
+            "saldo": 51700,
+            "nota": null
+        },
+        {
+            "fecha": "2024-02-14",
+            "categoria": {
+                "grupo": "Gastos Empresa",
+                "subgrupo": "Insumos"
+            },
+            "tipo": "egreso",
+            "monto": 2600,
+            "saldo": 49100,
+            "nota": "Papel Higienico"
+        },
+        {
+            "fecha": "2024-02-14",
+            "categoria": {
+                "grupo": "Hogar",
+                "subgrupo": "Comida"
+            },
+            "tipo": "egreso",
+            "monto": 4500,
+            "saldo": 44600,
+            "nota": "Almuerzo"
+        },
+        {
+            "fecha": "2024-02-15",
+            "categoria": {
+                "grupo": "Ingresos",
+                "subgrupo": "Venta de Divisas"
+            },
+            "tipo": "ingreso",
+            "monto": 244600,
+            "saldo": 244600,
+            "nota": null
+        },
+        {
+            "fecha": "2024-02-15",
+            "categoria": {
+                "grupo": "Gastos Empresa",
+                "subgrupo": "Insumos"
+            },
+            "tipo": "egreso",
+            "monto": 89100,
+            "saldo": 155500,
+            "nota": "Agua - La Naviera - Pago Cta. Cte."
+        },
+        {
+            "fecha": "2024-02-15",
+            "categoria": {
+                "grupo": "Gastos Empresa",
+                "subgrupo": "Insumos"
+            },
+            "tipo": "egreso",
+            "monto": 14000,
+            "saldo": 141500,
+            "nota": "Discos de Corte"
+        },
+        {
+            "fecha": "2024-02-15",
+            "categoria": {
+                "grupo": "Proveedores",
+                "subgrupo": "Bedogni"
+            },
+            "tipo": "egreso",
+            "monto": 2000,
+            "saldo": 139500,
+            "nota": "Ferriti - Ticket N° 023732"
+        },
+        {
+            "fecha": "2024-02-15",
+            "categoria": {
+                "grupo": "Proveedores",
+                "subgrupo": "EMI"
+            },
+            "tipo": "egreso",
+            "monto": 118480,
+            "saldo": 21020,
+            "nota": "Pago Cta. Cte. - Recibo N° 008447"
+        },
+        {
+            "fecha": "2024-02-15",
+            "categoria": {
+                "grupo": "Hogar",
+                "subgrupo": "Empleada"
+            },
+            "tipo": "egreso",
+            "monto": 3000,
+            "saldo": 18020,
+            "nota": null
+        },
+        {
+            "fecha": "2024-02-16",
+            "categoria": {
+                "grupo": "Clientes",
+                "subgrupo": "Abdelnur, Juan Pablo"
+            },
+            "tipo": "ingreso",
+            "monto": 2229000,
+            "saldo": 2247020,
+            "nota": "Saldo Completo - Presupuesto PM-10650 - 78123622"
+        },
+        {
+            "fecha": "2024-02-16",
+            "categoria": {
+                "grupo": "Clientes",
+                "subgrupo": "Abdelnur, Juan Pablo"
+            },
+            "tipo": "ingreso",
+            "monto": 1996000,
+            "saldo": 4243020,
+            "nota": "Saldo Completo - Presupuesto PM-10651 - 78123622"
+        },
+        {
+            "fecha": "2024-02-16",
+            "categoria": {
+                "grupo": "Gastos Empresa",
+                "subgrupo": "Miscelaneos"
+            },
+            "tipo": "egreso",
+            "monto": 800,
+            "saldo": 4242220,
+            "nota": "Cadete"
+        },
+        {
+            "fecha": "2024-02-16",
+            "categoria": {
+                "grupo": "Hogar",
+                "subgrupo": "Comida"
+            },
+            "tipo": "egreso",
+            "monto": 4200,
+            "saldo": 4238020,
+            "nota": "Almuerzo"
+        },
+        {
+            "fecha": "2024-02-16",
+            "categoria": {
+                "grupo": "Ingresos",
+                "subgrupo": "Venta de Divisas"
+            },
+            "tipo": "ingreso",
+            "monto": 5738020,
+            "saldo": 5738020,
+            "nota": "Venta de Dolares - T.C.: $1.080"
+        },
+        {
+            "fecha": "2024-03-01",
+            "categoria": {
+                "grupo": "Ingresos",
+                "subgrupo": "Saldo de Ejercicios Anteriores"
+            },
+            "tipo": "ingreso",
+            "monto": 312320,
+            "saldo": 312320,
+            "nota": "Justificar"
+        },
+        {
+            "fecha": "2024-03-02",
+            "categoria": {
+                "grupo": "Ingresos",
+                "subgrupo": "Venta de Divisas"
+            },
+            "tipo": "ingreso",
+            "monto": 1050000,
+            "saldo": 1046000,
+            "nota": "Venta de Dolares - T.C.: $1.180"
+        },
+        {
+            "fecha": "2024-03-02",
+            "categoria": {
+                "grupo": "Hogar",
+                "subgrupo": "Comida"
+            },
+            "tipo": "egreso",
+            "monto": 4000,
+            "saldo": 1046000,
+            "nota": "Almuerzo"
+        },
+        {
+            "fecha": "2024-03-02",
+            "categoria": {
+                "grupo": "Sueldos",
+                "subgrupo": "Carmen"
+            },
+            "tipo": "egreso",
+            "monto": 40000,
+            "saldo": 1006000,
+            "nota": null
+        },
+        {
+            "fecha": "2024-03-02",
+            "categoria": {
+                "grupo": "Sueldos",
+                "subgrupo": "Empleados"
+            },
+            "tipo": "egreso",
+            "monto": 729500,
+            "saldo": 276500,
+            "nota": null
+        },
+        {
+            "fecha": "2024-03-02",
+            "categoria": {
+                "grupo": "Sueldos",
+                "subgrupo": "Papá/Mamá"
+            },
+            "tipo": "egreso",
+            "monto": 100000,
+            "saldo": 176500,
+            "nota": null
+        },
+        {
+            "fecha": "2024-03-02",
+            "categoria": {
+                "grupo": "Sueldos",
+                "subgrupo": "Leandro"
+            },
+            "tipo": "egreso",
+            "monto": 176000,
+            "saldo": 500,
+            "nota": null
+        },
+        {
+            "fecha": "2024-03-05",
+            "categoria": {
+                "grupo": "Plata Prestada",
+                "subgrupo": "Leandro"
+            },
+            "tipo": "ingreso",
+            "monto": 91000,
+            "saldo": 91000,
+            "nota": "Dados por Leo"
+        },
+        {
+            "fecha": "2024-03-05",
+            "categoria": {
+                "grupo": "Hogar",
+                "subgrupo": "Comida"
+            },
+            "tipo": "egreso",
+            "monto": 6000,
+            "saldo": 85000,
+            "nota": "Almuerzo"
+        },
+        {
+            "fecha": "2024-03-05",
+            "categoria": {
+                "grupo": "Sueldos",
+                "subgrupo": "Empleados"
+            },
+            "tipo": "egreso",
+            "monto": 10000,
+            "saldo": 75000,
+            "nota": "Vale Coronel"
+        },
+        {
+            "fecha": "2024-03-06",
+            "categoria": {
+                "grupo": "Hogar",
+                "subgrupo": "Comida"
+            },
+            "tipo": "egreso",
+            "monto": 1600,
+            "saldo": 73400,
+            "nota": "Panadería"
+        },
+        {
+            "fecha": "2024-03-06",
+            "categoria": {
+                "grupo": "Gastos Empresa",
+                "subgrupo": "Viaticos Obras"
+            },
+            "tipo": "egreso",
+            "monto": 2000,
+            "saldo": 71400,
+            "nota": "Sanatorio Rivadavia"
+        },
+        {
+            "fecha": "2024-03-06",
+            "categoria": {
+                "grupo": "Gastos Empresa",
+                "subgrupo": "Insumos"
+            },
+            "tipo": "egreso",
+            "monto": 1000,
+            "saldo": 70400,
+            "nota": "Guantes de Latex"
+        },
+        {
+            "fecha": "2024-03-06",
+            "categoria": {
+                "grupo": "Hogar",
+                "subgrupo": "Comida"
+            },
+            "tipo": "egreso",
+            "monto": 6000,
+            "saldo": 64400,
+            "nota": "Almuerzo"
+        },
+        {
+            "fecha": "2024-03-06",
+            "categoria": {
+                "grupo": "Sueldos",
+                "subgrupo": "Empleados"
+            },
+            "tipo": "egreso",
+            "monto": 10000,
+            "saldo": 54400,
+            "nota": "Vale Fabian"
+        },
+        {
+            "fecha": "2024-03-06",
+            "categoria": {
+                "grupo": "Sueldos",
+                "subgrupo": "Empleados"
+            },
+            "tipo": "egreso",
+            "monto": 30000,
+            "saldo": 24400,
+            "nota": "Vale Perea"
+        },
+        {
+            "fecha": "2024-03-07",
+            "categoria": {
+                "grupo": "Gastos Empresa",
+                "subgrupo": "Insumos"
+            },
+            "tipo": "egreso",
+            "monto": 1700,
+            "saldo": 22700,
+            "nota": "Tornillos para chapa"
+        },
+        {
+            "fecha": "2024-03-07",
+            "categoria": {
+                "grupo": "Hogar",
+                "subgrupo": "Empleada"
+            },
+            "tipo": "egreso",
+            "monto": 4500,
+            "saldo": 18200,
+            "nota": null
+        },
+        {
+            "fecha": "2024-03-08",
+            "categoria": {
+                "grupo": "Automóvil",
+                "subgrupo": "Combustible"
+            },
+            "tipo": "egreso",
+            "monto": 10000,
+            "saldo": 8200,
+            "nota": "S10 - Factura A N° 280923"
+        },
+        {
+            "fecha": "2024-03-08",
+            "categoria": {
+                "grupo": "Gastos Empresa",
+                "subgrupo": "Viaticos Obras"
+            },
+            "tipo": "egreso",
+            "monto": 8000,
+            "saldo": 200,
+            "nota": "Petraglia"
+        },
+        {
+            "fecha": "2024-03-08",
+            "categoria": {
+                "grupo": "Ingresos",
+                "subgrupo": "Venta de Divisas"
+            },
+            "tipo": "ingreso",
+            "monto": 200200,
+            "saldo": 200200,
+            "nota": "Venta de Dolares - T.C.: $1.135"
+        },
+        {
+            "fecha": "2024-03-08",
+            "categoria": {
+                "grupo": "Hogar",
+                "subgrupo": "Comida"
+            },
+            "tipo": "egreso",
+            "monto": 6000,
+            "saldo": 194200,
+            "nota": "Almuerzo"
+        },
+        {
+            "fecha": "2024-03-08",
+            "categoria": {
+                "grupo": "Proveedores",
+                "subgrupo": "Hipermaderas"
+            },
+            "tipo": "egreso",
+            "monto": 159500,
+            "saldo": 34700,
+            "nota": "Compra Cemento de Contacto - Factura A N°"
+        },
+        {
+            "fecha": "2024-03-08",
+            "categoria": {
+                "grupo": "Sueldos",
+                "subgrupo": "Empleados"
+            },
+            "tipo": "egreso",
+            "monto": 10000,
+            "saldo": 24700,
+            "nota": "Vale Alarcon"
+        },
+        {
+            "fecha": "2024-03-09",
+            "categoria": {
+                "grupo": "Gastos Empresa",
+                "subgrupo": "Viaticos Obras"
+            },
+            "tipo": "egreso",
+            "monto": 9000,
+            "saldo": 15700,
+            "nota": "Petraglia"
+        },
+        {
+            "fecha": "2024-03-09",
+            "categoria": {
+                "grupo": "Hogar",
+                "subgrupo": "Comida"
+            },
+            "tipo": "egreso",
+            "monto": 4900,
+            "saldo": 10800,
+            "nota": "Panaderia + Almuerzo"
+        },
+        {
+            "fecha": "2024-03-09",
+            "categoria": {
+                "grupo": "Proveedores",
+                "subgrupo": "Hipermaderas"
+            },
+            "tipo": "egreso",
+            "monto": 14400,
+            "saldo": -3600,
+            "nota": "Discos de Corte - Factura A N°"
+        },
+        {
+            "fecha": "2024-03-09",
+            "categoria": {
+                "grupo": "Ingresos",
+                "subgrupo": "Venta de Divisas"
+            },
+            "tipo": "ingreso",
+            "monto": 2496400,
+            "saldo": 2496400,
+            "nota": "Venta de Dolares - T.C.: $1.135"
+        },
+        {
+            "fecha": "2024-03-09",
+            "categoria": {
+                "grupo": "Sueldos",
+                "subgrupo": "Carmen"
+            },
+            "tipo": "egreso",
+            "monto": 60000,
+            "saldo": 2436400,
+            "nota": null
+        },
+        {
+            "fecha": "2024-03-09",
+            "categoria": {
+                "grupo": "Sueldos",
+                "subgrupo": "Empleados"
+            },
+            "tipo": "egreso",
+            "monto": 2081000,
+            "saldo": 355400,
+            "nota": "Semanal + Diferencia por vacaciones"
+        },
+        {
+            "fecha": "2024-03-09",
+            "categoria": {
+                "grupo": "Sueldos",
+                "subgrupo": "Leandro"
+            },
+            "tipo": "egreso",
+            "monto": 200000,
+            "saldo": 155400,
+            "nota": null
+        },
+        {
+            "fecha": "2024-03-09",
+            "categoria": {
+                "grupo": "Plata Prestada",
+                "subgrupo": "Leandro"
+            },
+            "tipo": "egreso",
+            "monto": 90500,
+            "saldo": 64900,
+            "nota": "Devueltos a Leo"
+        },
+        {
+            "fecha": "2024-03-14",
+            "categoria": {
+                "grupo": "Gastos Empresa",
+                "subgrupo": "Viaticos Obras"
+            },
+            "tipo": "egreso",
+            "monto": 9000,
+            "saldo": 55900,
+            "nota": "Petraglia"
+        },
+        {
+            "fecha": "2024-03-14",
+            "categoria": {
+                "grupo": "Hogar",
+                "subgrupo": "Comida"
+            },
+            "tipo": "egreso",
+            "monto": 3000,
+            "saldo": 52900,
+            "nota": "Panaderia"
+        },
+        {
+            "fecha": "2024-03-14",
+            "categoria": {
+                "grupo": "Gastos Empresa",
+                "subgrupo": "Insumos"
+            },
+            "tipo": "egreso",
+            "monto": 1000,
+            "saldo": 51900,
+            "nota": "Barilla extra pasador Casa Vera"
+        },
+        {
+            "fecha": "2024-03-14",
+            "categoria": {
+                "grupo": "Automóvil",
+                "subgrupo": "Estacionamiento"
+            },
+            "tipo": "egreso",
+            "monto": 200,
+            "saldo": 51700,
+            "nota": null
+        },
+        {
+            "fecha": "2024-03-14",
+            "categoria": {
+                "grupo": "Gastos Empresa",
+                "subgrupo": "Insumos"
+            },
+            "tipo": "egreso",
+            "monto": 2600,
+            "saldo": 49100,
+            "nota": "Papel Higienico"
+        },
+        {
+            "fecha": "2024-03-14",
+            "categoria": {
+                "grupo": "Hogar",
+                "subgrupo": "Comida"
+            },
+            "tipo": "egreso",
+            "monto": 4500,
+            "saldo": 44600,
+            "nota": "Almuerzo"
+        },
+        {
+            "fecha": "2024-03-15",
+            "categoria": {
+                "grupo": "Ingresos",
+                "subgrupo": "Venta de Divisas"
+            },
+            "tipo": "ingreso",
+            "monto": 244600,
+            "saldo": 244600,
+            "nota": null
+        },
+        {
+            "fecha": "2024-03-15",
+            "categoria": {
+                "grupo": "Gastos Empresa",
+                "subgrupo": "Insumos"
+            },
+            "tipo": "egreso",
+            "monto": 89100,
+            "saldo": 155500,
+            "nota": "Agua - La Naviera - Pago Cta. Cte."
+        },
+        {
+            "fecha": "2024-03-15",
+            "categoria": {
+                "grupo": "Gastos Empresa",
+                "subgrupo": "Insumos"
+            },
+            "tipo": "egreso",
+            "monto": 14000,
+            "saldo": 141500,
+            "nota": "Discos de Corte"
+        },
+        {
+            "fecha": "2024-03-15",
+            "categoria": {
+                "grupo": "Proveedores",
+                "subgrupo": "Bedogni"
+            },
+            "tipo": "egreso",
+            "monto": 2000,
+            "saldo": 139500,
+            "nota": "Ferriti - Ticket N° 023732"
+        },
+        {
+            "fecha": "2024-03-15",
+            "categoria": {
+                "grupo": "Proveedores",
+                "subgrupo": "EMI"
+            },
+            "tipo": "egreso",
+            "monto": 118480,
+            "saldo": 21020,
+            "nota": "Pago Cta. Cte. - Recibo N° 008447"
+        },
+        {
+            "fecha": "2024-03-15",
+            "categoria": {
+                "grupo": "Hogar",
+                "subgrupo": "Empleada"
+            },
+            "tipo": "egreso",
+            "monto": 3000,
+            "saldo": 18020,
+            "nota": null
+        },
+        {
+            "fecha": "2024-03-16",
+            "categoria": {
+                "grupo": "Clientes",
+                "subgrupo": "Abdelnur, Juan Pablo"
+            },
+            "tipo": "ingreso",
+            "monto": 2229000,
+            "saldo": 2247020,
+            "nota": "Saldo Completo - Presupuesto PM-10650 - 78123622"
+        },
+        {
+            "fecha": "2024-03-16",
+            "categoria": {
+                "grupo": "Clientes",
+                "subgrupo": "Abdelnur, Juan Pablo"
+            },
+            "tipo": "ingreso",
+            "monto": 1996000,
+            "saldo": 4243020,
+            "nota": "Saldo Completo - Presupuesto PM-10651 - 78123622"
+        },
+        {
+            "fecha": "2024-03-16",
+            "categoria": {
+                "grupo": "Gastos Empresa",
+                "subgrupo": "Miscelaneos"
+            },
+            "tipo": "egreso",
+            "monto": 800,
+            "saldo": 4242220,
+            "nota": "Cadete"
+        },
+        {
+            "fecha": "2024-03-16",
+            "categoria": {
+                "grupo": "Hogar",
+                "subgrupo": "Comida"
+            },
+            "tipo": "egreso",
+            "monto": 4200,
+            "saldo": 4238020,
+            "nota": "Almuerzo"
+        },
+        {
+            "fecha": "2024-03-16",
+            "categoria": {
+                "grupo": "Ingresos",
+                "subgrupo": "Venta de Divisas"
+            },
+            "tipo": "ingreso",
+            "monto": 5738020,
+            "saldo": 5738020,
+            "nota": "Venta de Dolares - T.C.: $1.080"
+        },
+        {
+            "fecha": "2024-04-01",
+            "categoria": {
+                "grupo": "Ingresos",
+                "subgrupo": "Saldo de Ejercicios Anteriores"
+            },
+            "tipo": "ingreso",
+            "monto": 312320,
+            "saldo": 312320,
+            "nota": "Justificar"
+        },
+        {
+            "fecha": "2024-04-02",
+            "categoria": {
+                "grupo": "Ingresos",
+                "subgrupo": "Venta de Divisas"
+            },
+            "tipo": "ingreso",
+            "monto": 1050000,
+            "saldo": 1046000,
+            "nota": "Venta de Dolares - T.C.: $1.180"
+        },
+        {
+            "fecha": "2024-04-02",
+            "categoria": {
+                "grupo": "Hogar",
+                "subgrupo": "Comida"
+            },
+            "tipo": "egreso",
+            "monto": 4000,
+            "saldo": 1046000,
+            "nota": "Almuerzo"
+        },
+        {
+            "fecha": "2024-04-02",
+            "categoria": {
+                "grupo": "Sueldos",
+                "subgrupo": "Carmen"
+            },
+            "tipo": "egreso",
+            "monto": 40000,
+            "saldo": 1006000,
+            "nota": null
+        },
+        {
+            "fecha": "2024-04-02",
+            "categoria": {
+                "grupo": "Sueldos",
+                "subgrupo": "Empleados"
+            },
+            "tipo": "egreso",
+            "monto": 729500,
+            "saldo": 276500,
+            "nota": null
+        },
+        {
+            "fecha": "2024-04-02",
+            "categoria": {
+                "grupo": "Sueldos",
+                "subgrupo": "Papá/Mamá"
+            },
+            "tipo": "egreso",
+            "monto": 100000,
+            "saldo": 176500,
+            "nota": null
+        },
+        {
+            "fecha": "2024-04-02",
+            "categoria": {
+                "grupo": "Sueldos",
+                "subgrupo": "Leandro"
+            },
+            "tipo": "egreso",
+            "monto": 176000,
+            "saldo": 500,
+            "nota": null
+        },
+        {
+            "fecha": "2024-04-05",
+            "categoria": {
+                "grupo": "Plata Prestada",
+                "subgrupo": "Leandro"
+            },
+            "tipo": "ingreso",
+            "monto": 91000,
+            "saldo": 91000,
+            "nota": "Dados por Leo"
+        },
+        {
+            "fecha": "2024-04-05",
+            "categoria": {
+                "grupo": "Hogar",
+                "subgrupo": "Comida"
+            },
+            "tipo": "egreso",
+            "monto": 6000,
+            "saldo": 85000,
+            "nota": "Almuerzo"
+        },
+        {
+            "fecha": "2024-04-05",
+            "categoria": {
+                "grupo": "Sueldos",
+                "subgrupo": "Empleados"
+            },
+            "tipo": "egreso",
+            "monto": 10000,
+            "saldo": 75000,
+            "nota": "Vale Coronel"
+        },
+        {
+            "fecha": "2024-04-06",
+            "categoria": {
+                "grupo": "Hogar",
+                "subgrupo": "Comida"
+            },
+            "tipo": "egreso",
+            "monto": 1600,
+            "saldo": 73400,
+            "nota": "Panadería"
+        },
+        {
+            "fecha": "2024-04-06",
+            "categoria": {
+                "grupo": "Gastos Empresa",
+                "subgrupo": "Viaticos Obras"
+            },
+            "tipo": "egreso",
+            "monto": 2000,
+            "saldo": 71400,
+            "nota": "Sanatorio Rivadavia"
+        },
+        {
+            "fecha": "2024-04-06",
+            "categoria": {
+                "grupo": "Gastos Empresa",
+                "subgrupo": "Insumos"
+            },
+            "tipo": "egreso",
+            "monto": 1000,
+            "saldo": 70400,
+            "nota": "Guantes de Latex"
+        },
+        {
+            "fecha": "2024-04-06",
+            "categoria": {
+                "grupo": "Hogar",
+                "subgrupo": "Comida"
+            },
+            "tipo": "egreso",
+            "monto": 6000,
+            "saldo": 64400,
+            "nota": "Almuerzo"
+        },
+        {
+            "fecha": "2024-04-06",
+            "categoria": {
+                "grupo": "Sueldos",
+                "subgrupo": "Empleados"
+            },
+            "tipo": "egreso",
+            "monto": 10000,
+            "saldo": 54400,
+            "nota": "Vale Fabian"
+        },
+        {
+            "fecha": "2024-04-06",
+            "categoria": {
+                "grupo": "Sueldos",
+                "subgrupo": "Empleados"
+            },
+            "tipo": "egreso",
+            "monto": 30000,
+            "saldo": 24400,
+            "nota": "Vale Perea"
+        },
+        {
+            "fecha": "2024-04-07",
+            "categoria": {
+                "grupo": "Gastos Empresa",
+                "subgrupo": "Insumos"
+            },
+            "tipo": "egreso",
+            "monto": 1700,
+            "saldo": 22700,
+            "nota": "Tornillos para chapa"
+        },
+        {
+            "fecha": "2024-04-07",
+            "categoria": {
+                "grupo": "Hogar",
+                "subgrupo": "Empleada"
+            },
+            "tipo": "egreso",
+            "monto": 4500,
+            "saldo": 18200,
+            "nota": null
+        },
+        {
+            "fecha": "2024-04-08",
+            "categoria": {
+                "grupo": "Automóvil",
+                "subgrupo": "Combustible"
+            },
+            "tipo": "egreso",
+            "monto": 10000,
+            "saldo": 8200,
+            "nota": "S10 - Factura A N° 280923"
+        },
+        {
+            "fecha": "2024-04-08",
+            "categoria": {
+                "grupo": "Gastos Empresa",
+                "subgrupo": "Viaticos Obras"
+            },
+            "tipo": "egreso",
+            "monto": 8000,
+            "saldo": 200,
+            "nota": "Petraglia"
+        },
+        {
+            "fecha": "2024-04-08",
+            "categoria": {
+                "grupo": "Ingresos",
+                "subgrupo": "Venta de Divisas"
+            },
+            "tipo": "ingreso",
+            "monto": 200200,
+            "saldo": 200200,
+            "nota": "Venta de Dolares - T.C.: $1.135"
+        },
+        {
+            "fecha": "2024-04-08",
+            "categoria": {
+                "grupo": "Hogar",
+                "subgrupo": "Comida"
+            },
+            "tipo": "egreso",
+            "monto": 6000,
+            "saldo": 194200,
+            "nota": "Almuerzo"
+        },
+        {
+            "fecha": "2024-04-08",
+            "categoria": {
+                "grupo": "Proveedores",
+                "subgrupo": "Hipermaderas"
+            },
+            "tipo": "egreso",
+            "monto": 159500,
+            "saldo": 34700,
+            "nota": "Compra Cemento de Contacto - Factura A N°"
+        },
+        {
+            "fecha": "2024-04-08",
+            "categoria": {
+                "grupo": "Sueldos",
+                "subgrupo": "Empleados"
+            },
+            "tipo": "egreso",
+            "monto": 10000,
+            "saldo": 24700,
+            "nota": "Vale Alarcon"
+        },
+        {
+            "fecha": "2024-04-09",
+            "categoria": {
+                "grupo": "Gastos Empresa",
+                "subgrupo": "Viaticos Obras"
+            },
+            "tipo": "egreso",
+            "monto": 9000,
+            "saldo": 15700,
+            "nota": "Petraglia"
+        },
+        {
+            "fecha": "2024-04-09",
+            "categoria": {
+                "grupo": "Hogar",
+                "subgrupo": "Comida"
+            },
+            "tipo": "egreso",
+            "monto": 4900,
+            "saldo": 10800,
+            "nota": "Panaderia + Almuerzo"
+        },
+        {
+            "fecha": "2024-04-09",
+            "categoria": {
+                "grupo": "Proveedores",
+                "subgrupo": "Hipermaderas"
+            },
+            "tipo": "egreso",
+            "monto": 14400,
+            "saldo": -3600,
+            "nota": "Discos de Corte - Factura A N°"
+        },
+        {
+            "fecha": "2024-04-09",
+            "categoria": {
+                "grupo": "Ingresos",
+                "subgrupo": "Venta de Divisas"
+            },
+            "tipo": "ingreso",
+            "monto": 2496400,
+            "saldo": 2496400,
+            "nota": "Venta de Dolares - T.C.: $1.135"
+        },
+        {
+            "fecha": "2024-04-09",
+            "categoria": {
+                "grupo": "Sueldos",
+                "subgrupo": "Carmen"
+            },
+            "tipo": "egreso",
+            "monto": 60000,
+            "saldo": 2436400,
+            "nota": null
+        },
+        {
+            "fecha": "2024-04-09",
+            "categoria": {
+                "grupo": "Sueldos",
+                "subgrupo": "Empleados"
+            },
+            "tipo": "egreso",
+            "monto": 2081000,
+            "saldo": 355400,
+            "nota": "Semanal + Diferencia por vacaciones"
+        },
+        {
+            "fecha": "2024-04-09",
+            "categoria": {
+                "grupo": "Sueldos",
+                "subgrupo": "Leandro"
+            },
+            "tipo": "egreso",
+            "monto": 200000,
+            "saldo": 155400,
+            "nota": null
+        },
+        {
+            "fecha": "2024-04-09",
+            "categoria": {
+                "grupo": "Plata Prestada",
+                "subgrupo": "Leandro"
+            },
+            "tipo": "egreso",
+            "monto": 90500,
+            "saldo": 64900,
+            "nota": "Devueltos a Leo"
+        },
+        {
+            "fecha": "2024-04-14",
+            "categoria": {
+                "grupo": "Gastos Empresa",
+                "subgrupo": "Viaticos Obras"
+            },
+            "tipo": "egreso",
+            "monto": 9000,
+            "saldo": 55900,
+            "nota": "Petraglia"
+        },
+        {
+            "fecha": "2024-04-14",
+            "categoria": {
+                "grupo": "Hogar",
+                "subgrupo": "Comida"
+            },
+            "tipo": "egreso",
+            "monto": 3000,
+            "saldo": 52900,
+            "nota": "Panaderia"
+        },
+        {
+            "fecha": "2024-04-14",
+            "categoria": {
+                "grupo": "Gastos Empresa",
+                "subgrupo": "Insumos"
+            },
+            "tipo": "egreso",
+            "monto": 1000,
+            "saldo": 51900,
+            "nota": "Barilla extra pasador Casa Vera"
+        },
+        {
+            "fecha": "2024-04-14",
+            "categoria": {
+                "grupo": "Automóvil",
+                "subgrupo": "Estacionamiento"
+            },
+            "tipo": "egreso",
+            "monto": 200,
+            "saldo": 51700,
+            "nota": null
+        },
+        {
+            "fecha": "2024-04-14",
+            "categoria": {
+                "grupo": "Gastos Empresa",
+                "subgrupo": "Insumos"
+            },
+            "tipo": "egreso",
+            "monto": 2600,
+            "saldo": 49100,
+            "nota": "Papel Higienico"
+        },
+        {
+            "fecha": "2024-04-14",
+            "categoria": {
+                "grupo": "Hogar",
+                "subgrupo": "Comida"
+            },
+            "tipo": "egreso",
+            "monto": 4500,
+            "saldo": 44600,
+            "nota": "Almuerzo"
+        },
+        {
+            "fecha": "2024-04-15",
+            "categoria": {
+                "grupo": "Ingresos",
+                "subgrupo": "Venta de Divisas"
+            },
+            "tipo": "ingreso",
+            "monto": 244600,
+            "saldo": 244600,
+            "nota": null
+        },
+        {
+            "fecha": "2024-04-15",
+            "categoria": {
+                "grupo": "Gastos Empresa",
+                "subgrupo": "Insumos"
+            },
+            "tipo": "egreso",
+            "monto": 89100,
+            "saldo": 155500,
+            "nota": "Agua - La Naviera - Pago Cta. Cte."
+        },
+        {
+            "fecha": "2024-04-15",
+            "categoria": {
+                "grupo": "Gastos Empresa",
+                "subgrupo": "Insumos"
+            },
+            "tipo": "egreso",
+            "monto": 14000,
+            "saldo": 141500,
+            "nota": "Discos de Corte"
+        },
+        {
+            "fecha": "2024-04-15",
+            "categoria": {
+                "grupo": "Proveedores",
+                "subgrupo": "Bedogni"
+            },
+            "tipo": "egreso",
+            "monto": 2000,
+            "saldo": 139500,
+            "nota": "Ferriti - Ticket N° 023732"
+        },
+        {
+            "fecha": "2024-04-15",
+            "categoria": {
+                "grupo": "Proveedores",
+                "subgrupo": "EMI"
+            },
+            "tipo": "egreso",
+            "monto": 118480,
+            "saldo": 21020,
+            "nota": "Pago Cta. Cte. - Recibo N° 008447"
+        },
+        {
+            "fecha": "2024-04-15",
+            "categoria": {
+                "grupo": "Hogar",
+                "subgrupo": "Empleada"
+            },
+            "tipo": "egreso",
+            "monto": 3000,
+            "saldo": 18020,
+            "nota": null
+        },
+        {
+            "fecha": "2024-04-16",
+            "categoria": {
+                "grupo": "Clientes",
+                "subgrupo": "Abdelnur, Juan Pablo"
+            },
+            "tipo": "ingreso",
+            "monto": 2229000,
+            "saldo": 2247020,
+            "nota": "Saldo Completo - Presupuesto PM-10650 - 78123622"
+        },
+        {
+            "fecha": "2024-04-16",
+            "categoria": {
+                "grupo": "Clientes",
+                "subgrupo": "Abdelnur, Juan Pablo"
+            },
+            "tipo": "ingreso",
+            "monto": 1996000,
+            "saldo": 4243020,
+            "nota": "Saldo Completo - Presupuesto PM-10651 - 78123622"
+        },
+        {
+            "fecha": "2024-04-16",
+            "categoria": {
+                "grupo": "Gastos Empresa",
+                "subgrupo": "Miscelaneos"
+            },
+            "tipo": "egreso",
+            "monto": 800,
+            "saldo": 4242220,
+            "nota": "Cadete"
+        },
+        {
+            "fecha": "2024-04-16",
+            "categoria": {
+                "grupo": "Hogar",
+                "subgrupo": "Comida"
+            },
+            "tipo": "egreso",
+            "monto": 4200,
+            "saldo": 4238020,
+            "nota": "Almuerzo"
+        },
+        {
+            "fecha": "2024-04-16",
+            "categoria": {
+                "grupo": "Ingresos",
+                "subgrupo": "Venta de Divisas"
+            },
+            "tipo": "ingreso",
+            "monto": 5738020,
+            "saldo": 5738020,
+            "nota": "Venta de Dolares - T.C.: $1.080"
+        }
+    ]
+}

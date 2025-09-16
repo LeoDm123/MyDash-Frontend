@@ -13,7 +13,13 @@ type DropdownList = {
     icon: JSX.Element
 }
 
-const dropdownItemList: DropdownList[] = []
+const dropdownItemList: DropdownList[] = [
+    {
+        label: 'Ver Perfil',
+        path: '/userProfile-view',
+        icon: <HiOutlineUser />,
+    },
+]
 
 const _UserDropdown = ({ className }: CommonProps) => {
     const { signOut } = useAuth()
@@ -22,11 +28,7 @@ const _UserDropdown = ({ className }: CommonProps) => {
 
     const authInfo = storedAuthInfo ? JSON.parse(storedAuthInfo) : null
 
-    console.log(authInfo)
-
     const user = authInfo
-
-    console.log(user)
 
     const UserAvatar = (
         <div className={classNames(className, 'flex items-center gap-2')}>
@@ -54,11 +56,11 @@ const _UserDropdown = ({ className }: CommonProps) => {
                             <div className="font-bold text-gray-900 dark:text-gray-100">
                                 {user?.name}
                             </div>
-                            <div className="text-xs">{user?.profile.role}</div>
+                            <div className="text-xs">{user?.role}</div>
                         </div>
                     </div>
                 </Dropdown.Item>
-                <Dropdown.Item variant="divider" />
+                {/* <Dropdown.Item variant="divider" /> */}
                 {dropdownItemList.map((item) => (
                     <Dropdown.Item
                         key={item.label}
@@ -78,7 +80,7 @@ const _UserDropdown = ({ className }: CommonProps) => {
                         </Link>
                     </Dropdown.Item>
                 ))}
-                {/* <Dropdown.Item variant="divider" /> */}
+                <Dropdown.Item variant="divider" />
                 <Dropdown.Item
                     eventKey="Sign Out"
                     className="gap-2"

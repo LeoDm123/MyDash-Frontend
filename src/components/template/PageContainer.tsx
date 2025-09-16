@@ -36,21 +36,23 @@ const PageContainer = (props: PageContainerProps) => {
     } = props
 
     return (
-        <div className="h-full flex flex-auto flex-col justify-between">
-            <main className="h-full">
+        <div className="h-full flex flex-auto flex-col justify-between ">
+            <main>
                 <div
                     className={classNames(
                         'page-container relative h-full flex flex-auto flex-col',
                         pageContainerType !== 'gutterless' &&
                             `${PAGE_CONTAINER_GUTTER_X} ${PAGE_CONTAINER_GUTTER_Y}`,
-                        pageContainerType === 'contained' && 'container mx-auto'
+                        pageContainerType === 'contained' &&
+                            'container mx-auto',
                     )}
+                    style={{ paddingBottom: 0 }}
                 >
                     {(header || extraHeader) && (
                         <div
                             className={classNames(
                                 contained && 'container mx-auto',
-                                'flex items-center justify-between mb-4'
+                                'flex items-center justify-between mb-4',
                             )}
                         >
                             <div>
